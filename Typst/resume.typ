@@ -21,6 +21,8 @@
   )
 }
 
+#set page(margin: (top: 0.8cm, bottom: 1.2cm, x: 1.5cm))
+
 #show: resume.with(
   author: (
       firstname: "Emmanuel", 
@@ -33,57 +35,55 @@
         "Senior Software Engineer"
       )
   ),
-  profile-picture: block(
-    width: 80pt, 
-    height: 80pt, 
+  profile-picture: move(dx: 1.5em, dy: -1.5em, block(
+    width: 60pt, 
+    height: 60pt, 
     radius: 50%, 
     clip: true, 
     stroke: 1pt + blue.darken(20%), 
     image("assets/image.png", width: 100%, height: 100%, fit: "cover")
-  ),
+  )),
   date: datetime.today().display(),
   language: "en",
   colored-headers: true,
 )
 
-#show heading: set block(above: 1.4em, below: 1em)
+#show heading: set block(above: 0.4em, below: 0.2em)
 #show line: none
 
 #show heading.where(level: 1): it => [
-  #v(1.2em)
   #block(
     fill: blue.darken(20%),
     width: 100%,
-    inset: (x: 10pt, y: 7pt),
+    inset: (x: 10pt, y: 4pt),
     radius: 3pt,
-    text(fill: white, weight: "bold", size: 1.1em, tracking: 0.6pt, upper(it.body))
+    text(fill: white, weight: "bold", size: 1.0em, tracking: 0.6pt, upper(it.body))
   )
-  #v(0.6em)
 ]
 
-#v(1em)
+#v(-2.1em, weak: false)
 #rect(
   fill: gray.lighten(95%),
   stroke: (left: 3pt + blue.darken(20%)),
-  inset: 10pt,
+  inset: 6pt,
   width: 100%,
   [
-    #set text(size: 0.95em, style: "italic")
+    #set text(size: 0.9em, style: "italic")
     Senior Software Engineer with 8+ years of experience in Fullstack development (Java, Kotlin, Rust, Flutter). 
     Passionate about building robust web platforms and exploring AI/NLP integrations looking for new challenging opportinity. 
     Keen on tech and strong from Tenable experience. I Work on Radicelle on my spare time, focusing on efficient and safe web development.
   ]
 )
 
-#v(0.5em)
 #align(center)[
-  #set text(size: 0.9em, fill: gray.darken(20%))
+  #set text(size: 0.85em, fill: gray.darken(20%))
   #icon("gmail") #h(2pt) emmanuelbretonbelz\@gmail.com #h(15pt)
   #icon("github") #h(2pt) #link("https://github.com/radicelle")[radicelle] #h(15pt)
   📞 +33 (0) 679122243 #h(15pt)
   📍 Giberville - 14730
 ]
-#v(1em)
+
+#v(0.9em)
 
 #resume-entry(
   title: [Tenable Inc. — Senior Backend Software Engineer],
@@ -100,9 +100,9 @@
   - Implemented NLP features using Gemini calls.
 ]
 
-#v(0.4em)
+#v(0.5em)
 #rect(width: 100%, height: 0.2pt, fill: gray.lighten(50%), stroke: none)
-#v(0.4em)
+#v(0.5em)
 
 #resume-entry(
   title: [Radicelle — Founder & Full stack developer],
@@ -119,9 +119,9 @@
   - Currently building a web stack entirely in Rust for my personal projects
 ]
 
-#v(0.4em)
+#v(0.5em)
 #rect(width: 100%, height: 0.2pt, fill: gray.lighten(50%), stroke: none)
-#v(0.4em)
+#v(0.5em)
 
 #resume-entry(
   title: [Eurecia — Full stack Web developer],
@@ -137,9 +137,9 @@
   - Used Spring annotations and MariaDB (plain SQL and JPA) for production-grade implementation and optimization.
 ]
 
-#v(0.4em)
+#v(0.5em)
 #rect(width: 100%, height: 0.2pt, fill: gray.lighten(50%), stroke: none)
-#v(0.4em)
+#v(0.5em)
 
 #resume-entry(
   title: [Artal Technologies — Full stack Eclipse RCP Development],
@@ -155,9 +155,9 @@
   - Strong knowledge in modular development.
 ]
 
-#v(0.4em)
+#v(0.5em)
 #rect(width: 100%, height: 0.2pt, fill: gray.lighten(50%), stroke: none)
-#v(0.4em)
+#v(0.5em)
 
 #resume-entry(
   title: [Bosch — Full stack Eclipse RCP Development],
@@ -171,9 +171,10 @@
   - Advanced version system of XSD schema using Eclipse built in features.
 ]
 
-#v(0.4em)
+/*
+#v(0.5em)
 #rect(width: 100%, height: 0.2pt, fill: gray.lighten(50%), stroke: none)
-#v(0.4em)
+#v(0.5em)
 
 #resume-entry(
   title: [DIEM — Object detection],
@@ -186,7 +187,10 @@
   - Creation of object recognition using SURF feature detector with OpenCV.
   - Programming in C++, and dealing with image loading, processing, feature extraction and feature enhancement for research purposes.
 ]
+#v(1em)
+*/
 
+#pagebreak()
 
 = Scholar experience
 
@@ -201,9 +205,9 @@
   - Competition for artificial vision course. Teams of three building software guiding Nao robot through a visually marked path and classify objects along the path. #link("https://github.com/manumanmax/Nao")[GitHub link]
 ]
 
-#v(0.4em)
+#v(0.5em)
 #rect(width: 100%, height: 0.2pt, fill: gray.lighten(50%), stroke: none)
-#v(0.4em)
+#v(0.5em)
 
 #resume-entry(
   title: [ENSICAEN - IUT — Website development],
@@ -217,7 +221,7 @@
   - Carpooling website development using HTML/PHP and MySQL database.
 ]
 
-#v(0.8em)
+#v(1em)
 
 = Education
 
@@ -228,7 +232,7 @@
   description: none
 )
 
-#v(0.6em)
+#v(0.5em)
 
 #resume-entry(
   title: [ENSICAEN — Engineer diploma in Informatics, image],
@@ -237,7 +241,7 @@
   description: none
 )
 
-#v(0.6em)
+#v(0.5em)
 
 #resume-entry(
   title: [IUT — Technical degree in Informatics, image],
@@ -246,26 +250,26 @@
   description: none
 )
 
-#v(0.8em)
+#v(1em)
 
 = Communication skills
-
+#v(0.5em)
 #skill("French (Native)", 1.0)
 #skill("English (TOIEC 820, Fluent)", 0.9)
 #skill("Italian (Fluent)", 0.85)
 #skill("German (B1)", 0.4)
 
-#v(0.8em)
+#v(1em)
 
 = AI Skills
-
+#v(0.5em)
 #resume-item[
   - *VS Code Copilot*: Professional usage (prompts, agents, modes)
   - *Gemini*: Gemini and Gemini Gems
   - *NLP & Prompt Engineering*: Professional development of prompts in production at Tenable with Gemini for NLP
 ]
 
-#v(0.8em)
+#v(1em)
 
 // Helper for skill pills
 #let tag(content, icon-name: none) = {
@@ -284,7 +288,7 @@
 }
 
 = Software skills
-
+#v(0.5em)
 #grid(
   columns: (1fr, 1fr),
   gutter: 20pt,
@@ -302,7 +306,7 @@
   ]
 )
 
-#v(0.8em)
+#v(0.5em)
 #block({
   let tags = (
     tag("Intellij", icon-name: "intellijidea"), tag("Snowflake", icon-name: "snowflake"), 
@@ -315,10 +319,10 @@
   tags.join(h(4pt))
 })
 
-#v(0.8em)
+#v(1em)
 
 = Hobbies
-
+#v(0.5em)
 #grid(
   columns: (1fr, 1fr, 1fr),
   gutter: 10pt,
