@@ -28,7 +28,6 @@
       email: "emmanuelbretonbelz@gmail.com", 
       phone: "+33 (0) 679122243",
       github: "radicelle",
-      address: "Vire Normandie",
       positions: (
         "Fullstack Web engineer",
         "Senior Software Engineer"
@@ -71,8 +70,8 @@
   [
     #set text(size: 0.95em, style: "italic")
     Senior Software Engineer with 8+ years of experience in Fullstack development (Java, Kotlin, Rust, Flutter). 
-    Passionate about building robust web platforms and exploring AI/NLP integrations. 
-    Founder of Radicelle, focusing on efficient and safe web development.
+    Passionate about building robust web platforms and exploring AI/NLP integrations looking for new challenging opportinity. 
+    Keen on tech and strong from Tenable experience. I Work on Radicelle on my spare time, focusing on efficient and safe web development.
   ]
 )
 
